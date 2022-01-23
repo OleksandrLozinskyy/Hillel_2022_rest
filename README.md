@@ -12,8 +12,8 @@
 Setup environment 
 ```bash
 # Create virtual environment
-pipenv install
-# pipenv install --dev
+pipenv sync
+# pipenv sync --dev
 pipenv shell
 
 # On manual setup install Django, Django REST Framework
@@ -27,8 +27,8 @@ pipenv sync
 Start Django server
 ```bash
 # Run migrations only on a project setup
-python manage.py migrate
+python src/manage.py migrate
 
 # Run server
-python manage.py runserver
+python src/manage.py runserver
 ```

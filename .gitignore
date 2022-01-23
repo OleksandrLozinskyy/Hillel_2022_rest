@@ -1,0 +1,8 @@
+# Editors / IDE
+.vscode/
+
+# Python
+__pycache__/
+
+# SQlite
+*sqlite*
