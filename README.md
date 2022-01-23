@@ -4,7 +4,7 @@
 
 ## Mandatory steps
 
-1. Install Python3.9+
+1. Install Python3.8+
 2. Install Pipenv
 
 ## Setup project
@@ -19,6 +19,9 @@ pipenv shell
 # On manual setup install Django, Django REST Framework
 pipenv install django djangorestframework
 
+# Install formatters and checkers
+pipenv install black flake8 isort
+
 # On setup cloned project sync virtual environment
 pipenv sync
 ```
@@ -31,4 +34,18 @@ python src/manage.py migrate
 
 # Run server
 python src/manage.py runserver
+```
+
+# Check's and prettify code
+
+Extra check's and formatting
+```bash
+# Using black code format tool
+python -m black .
+
+# Using flake8 
+flake8 .
+
+# Sorting imports
+isort .
 ```
